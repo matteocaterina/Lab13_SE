@@ -127,6 +127,14 @@ class Model:
                 result.append(v)
         return result
 
+
+    '''def get_admissible_neigbors(self, nodo, edges_parziali):
+        result = []
+        for v in self.G_filtrato.neighbors(nodo):
+            if (nodo,v) not in [(x[0], x[1]) for x in edges_parziali]:
+                result.append(v)
+        return result'''#si puo fare anche in questo modo
+
     def calcolaPeso(self, edges_parziali):
         pesoTotale = 0
         for e in edges_parziali:
